@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background-color: #888;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Ancizar Serif", serif;
+  padding-bottom: 80px;
+}
+
+body>h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 8rem;
+  word-spacing: .32rem;
+  color: rgb(4, 46, 66);
+}
+
+body>p {
+  font-size: 2.5rem;
+  color: rgb(1, 78, 114);
+  text-align: center;
+}
+
+button {
+  display: block;
+  padding: 1.5rem;
+  width: 200px;
+  text-align: center;
+  border: 2px solid transparent;
+  cursor: pointer;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  background-color: rgb(1, 78, 114);
+  ;
+  color: white;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  transition: 0.5s;
+}
+
+button:hover {
+  background-color: white;
+  color: rgb(1, 78, 114);
+  border-color: rgb(1, 78, 114);
+}
+
+.quote {
+  width: 100%;
+}
+
+.quote p {
+  color: rgb(1, 78, 114);
+  font-size: 1.8rem;
+  max-width: 85%;
+  margin-inline: auto;
+  text-align: center;
+  border-top: 2px solid rgb(1, 78, 114);
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.quote h2 {
+  text-align: center;
+  margin-top: 10px;
+  color: rgb(4, 46, 66);
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+
+@media (max-width: 991px) {
+  body>h1 {
+    font-size: 6rem;
+  }
+
+  body>p {
+    font-size: 2rem;
+  }
+
+  .quote p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  body>h1 {
+    font-size: 4rem;
+  }
+
+  body>p {
+    font-size: 1.5rem;
+  }
+
+  .quote p {
+    font-size: 1.3rem;
+  }
+}
